@@ -176,6 +176,22 @@ a:focus {
   margin: 0 25px;
 }
 
+/* Search */
+.search {
+  width: 70%;
+  border: 1px solid #183153;
+  border-radius: 25px;
+  margin: 0 auto;
+}
+
+.search-input {
+  padding: 20px;  
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.001);
+}
+
 /*end header section*/
 /* slider section */
 .slider_section {
