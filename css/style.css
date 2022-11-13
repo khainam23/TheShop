@@ -639,6 +639,32 @@ a:focus {
   margin: 0;
 }
 
+.price_section-nav {
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+  font-size: 1.4rem;
+  width: 55%;
+}
+
+.price_section-nav a {
+  color: inherit;
+}
+
+.price_section-nav a:hover {
+  color: #fbb534;
+}
+
+.page-nums {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.choose-page {
+  color: #fbb534;
+}
+
 .client_section .carousel-control-prev,
 .client_section .carousel-control-next {
   opacity: 1;
