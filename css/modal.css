@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.backgroud-img {
+    background-image: url(../images/hero-bg.png);
+}
+
+.section_login {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0.5px 0.5px 2px #0d0806;
+}
+
+.input-section {
+    position: relative;
+    margin-top: 20px;
+}
+
+.input-section input {
+    padding: 0 35px;
+    height: 50px;
+    width: 100%;
+    position: relative;
+    outline: none;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 2px solid #ccc;
+}
+
+.input-section input:is(:focus, :valid)~i {
+    color: orange;
+}
+
+.input-section input:is(:focus, :valid) {
+    border-bottom-color: orange;
+}
+
+
+
+.input-section i {
+    position: absolute;
+    top: 54%;
+    left: 2%;
+    color: #ccc;
+}
+
+.footer-input {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.footer-input-forgot_password {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-input-forgot_password:hover {
+    animation: animate_black_to_orange 0.5s forwards;
+}
+
+.btn-login {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.btn-login button {
+    border-radius: 30px;
+    border: none;
+    padding: 10px 0px;
+    width: 100%;
+    background-color: orange;
+    text-transform: uppercase;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.btn-login button:hover {
+    opacity: 0.8;
+}
+
+
+.link {
+    margin-top: 20%;
+    display: block;
+    text-align: center;
+}
+
+.icon-link {
+    font-size: 3rem;
+    padding: 15px 2px;
+    cursor: pointer;
+}
+
+.icon-link-blue:hover {
+    animation: animate_blue 1s forwards;
+}
+
+.icon-link-blueOpacity:hover {
+    animation: animate_blueOpacity 1s forwards;
+}
+
+.icon-link-red:hover {
+    animation: animate_red 1s forwards;
+}
+
+@keyframes animate_blue {
+    0% {
+        color: #3b5998;
+    }
+
+    100% {
+        color: orange;
+    }
+}
+
+@keyframes animate_blueOpacity {
+    0% {
+        color: #1da1f2;
+    }
+
+    100% {
+        color: orange;
+    }
+}
+
+@keyframes animate_red {
+    0% {
+        color: #ea4335;
+    }
+
+    100% {
+        color: orange;
+    }
+}
+
+.color_blue {
+    color: #3b5998;
+}
+
+.color_blueOpacity {
+    color: #1da1f2;
+}
+
+.color_red {
+    color: #ea4335;
+}
+
+.register {
+    padding-top: 50px;
+    padding-bottom: 10px;
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.register a {
+    text-decoration: none;
+}
+
+.resister_link {
+    color: black;
+}
+
+.resister_link:hover {
+    animation: animate_black_to_orange 0.5s forwards;
+}
+
+@keyframes animate_black_to_orange {
+    0% {
+        color: black;
+    }
+
+    100% {
+        color: orange;
+    }
+}
+
+.back_login {
+    position: relative;
+}
+
+.back_login i {
+    position: absolute;
+    color: orange;
+    font-size: 2rem;
+    left: 0;
+    top: 16%;
+}
+
+.back_login_from_forgot {
+    position: relative;
+}
+
+.back_login_from_forgot i {
+    position: absolute;
+    color: orange;
+    font-size: 2rem;
+    left: 0;
+    top: 7%;
+}
