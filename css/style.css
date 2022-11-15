@@ -450,6 +450,67 @@ a:focus {
       flex-wrap: wrap;
 }
 
+.product-nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.product-nav-list {
+  display: flex;
+}
+
+.product-nav-item {
+  margin-right: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.product-nav-item:last-child {
+  margin-right: 0;
+}
+
+.item-btn {
+  border: 1px solid #fbb534;
+  text-decoration: none;
+  color: inherit;
+}
+
+.box-item {
+  top: 40px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  text-align: center;
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.box-item::after {
+  content: "";
+  top: -5px;
+  left: 0;
+  position: absolute;
+  height: 3px;
+  width: 100px;
+}
+
+.box-item-list-item {
+  padding: 4px;
+}
+
+.box-item-list-item a {
+  padding: 4px 50px;
+}
+
+.box-item-list-item:hover {
+  background-color: rgb(234, 231, 231);
+}
+
+
+.product-nav-item:hover .box-item {
+  display: block;
+}
+
 .price_section .price_container .box {
   min-width: 300px;
   max-width: 360px;
