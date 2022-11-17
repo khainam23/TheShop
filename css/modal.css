@@ -6,7 +6,11 @@
 }
 
 .backgroud-img {
-    background-image: url(../images/hero-bg.png);
+    background: url(../images/hero-bg.png) no-repeat;
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-position: bottom right;
 }
 
 .section_login {
