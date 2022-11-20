@@ -17,3 +17,8 @@ function myMap() {
     };
     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 }
+
+// Notification
+function notification() {
+    alert('Thank you very much!')
+}
