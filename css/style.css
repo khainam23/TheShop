@@ -885,6 +885,7 @@ a:focus {
 
 .info_section .info_container .info_contact {
   padding: 115px 10px 45px 10px;
+  margin-right: 10px;
 }
 
 .info_section .info_container .info_contact a {
