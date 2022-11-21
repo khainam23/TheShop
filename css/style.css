@@ -419,7 +419,8 @@ a:focus {
   display: none;
 }
 
-.about_section .detail-box button {
+.about_section .detail-box button,
+.about_section .detail-box a {
   display: inline-block;
   padding: 8px 40px;
   background-color: #0d0806;
