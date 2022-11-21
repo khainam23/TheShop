@@ -415,7 +415,11 @@ a:focus {
   margin-top: 35px;
 }
 
-.about_section .detail-box a {
+.more {
+  display: none;
+}
+
+.about_section .detail-box button {
   display: inline-block;
   padding: 8px 40px;
   background-color: #0d0806;
