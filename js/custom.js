@@ -22,3 +22,8 @@ function myMap() {
 function notification() {
     alert('Thank you very much!')
 }
+
+$(".read-more").click(function() {
+    $(".more").show();
+    $(".read-more").hide();
+});
