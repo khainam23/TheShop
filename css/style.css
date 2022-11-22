@@ -480,7 +480,12 @@ a:focus {
   color: inherit;
 }
 
+.item-btn i {
+  margin-left: 5px;
+}
+
 .box-item {
+  min-width: max-content;
   top: 40px;
   border: 1px solid #ccc;
   background-color: #fff;
