@@ -24,6 +24,6 @@ function notification() {
 }
 
 $(".read-more").click(function() {
-    $(".more").show();
+    $(".more").show(1000);
     $(".read-more").hide();
 });
