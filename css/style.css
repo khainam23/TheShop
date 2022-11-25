@@ -1036,4 +1036,17 @@ a:focus {
   box-shadow: 1px 1px 1px #AAA;
 }
 
+.drop {
+  animation: fadeIn ease-in-out 0.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
