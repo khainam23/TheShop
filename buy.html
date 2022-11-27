@@ -1,0 +1,1382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/responsive.css">
+  <!-- Icon -->
+  <link rel="icon" href="./images/slider1-img.png" type="image/x-icon">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>Payment</title>
+</head>
+
+<body>
+  <div class="container_fluid all">
+    <div class="nav">
+      <div class="col-lg-12 col-md-12 col-sm-12 header">
+        <div class="header_logo d-flex px-4 align-items-center">
+          <a href="index.html" style="text-decoration: none; color: black; display: flex;">
+            <picture>
+              <img src="./images/logo.png" alt="" />
+            </picture>
+            <h1>LODGE</h1>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container content" style="padding-bottom: 50px;" data-aos-duration="1000" data-aos="fade-up">
+      <div class="payment_layout">
+        <div class="row">
+
+          <!-- phan mua hang -->
+          <div class="col-lg-8 col-md-12 col-sm-12">
+            <!-- dang ky dia chi -->
+            <div class="payment_address">
+              <div class="payment_address_title">
+                <span class="mb-0" style="color: #212529; font-weight: 400;"><b>Shipping Address</b></span>
+                <span onclick="$('#edit_address').css('display', 'block')"
+                  class="payment_address_title-edit">Edit</span>
+              </div>
+
+
+              <div class="payment_address--info">
+                <div class="user">
+                  <span>Name: Aliqua</span>
+                  <span>ID: 123456789</span>
+                </div>
+                <div style="margin-top: 8px">
+                  <span>601 W 43rd St, New York, NY 10036, USA</span>
+                </div>
+
+                <div class="payment_address--shipping payment_address--shipping-lg"
+                  onclick="$('.edit_collection_point-lg').css('display', 'flex')">
+                  <span style="color: orange;">Choose Collection Point as the easiest way to collect
+                    package <i class="fa-solid fa-angle-right"></i></span>
+                  <br />
+                  <div class="suggested">
+                    <span style="color: #797575; font-size: 13px">3 suggested collection point(s) nearby</span>
+                    <i style="
+                          color: #797575;
+                          font-size: 14px;
+                        " class="fa-solid fa-circle-info"></i>
+                  </div>
+                </div>
+
+                <div class="payment_address--shipping payment_address--shipping-mobile"
+                  onclick="$('.edit_collection_point_sm').css('display', 'block')">
+                  <span style="color: orange;">Choose Collection Point as the easiest way to collect
+                    package <i class="fa-solid fa-angle-right"></i></span>
+                  <br />
+                  <div class="suggested">
+                    <span style="color: #797575; font-size: 13px">3 suggested collection point(s) nearby</span>
+                    <i style="
+                        color: #797575;
+                        font-size: 14px;
+                      " class="fa-solid fa-circle-info"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- san pham -->
+            <div class="payment_product">
+              <div class="payment_product_title">
+                <span class="mb-0"><b>Package 1 of 3</b></span>
+                <div>
+                  <span style="color: #797575">Shipped by</span>
+                  <span><b>Samsung</b></span>
+                </div>
+              </div>
+              <span style="font-size: 12px; padding: 10px 10px">Choose your delivery option</span>
+              <div class="payment_product--info d-flex">
+                <div class="payment_product--info--delivery">
+                  <div class="d-flex">
+                    <i style="color: orange; margin-top: 3px; font-size: 17px" class="fa-solid fa-circle-check"></i>
+                    <div style="margin-left: 10px">
+                      <span style="font-size: 15px">$ 0</span>
+                      <br />
+                      <span style="font-size: 13px">Standard Delivery</span>
+                      <br />
+                      <span style="font-size: 14px">Get by 18-21 Nov</span>
+                    </div>
+                  </div>
+                </div>
+                <div style="padding: 0 5px"></div>
+              </div>
+
+              <div class="payment_product__item">
+                <div class="container" style="padding: 0 0;">
+                  <div class="row">
+                    <div class="col-lg-8 col-md-7 col-sm-7">
+                      <div class="payment_product__item_left d-flex">
+                        <picture>
+                          <img src="./images/i-4.png" style="height: 100px; width: 100px" />
+                        </picture>
+                        <div class="payment_product__item_left-infoItem">
+                          <span>White Gold Ring</span>
+                          <span class="code-product">Code: J0000</span>
+                          <br>
+                          <span style="color: #797575; font-size: 13px">Teirra, Size: 8, 9, 10</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-5 col-sm-5">
+                      <div class="payment_product__item_right" style="font-size: 15px; padding: 10px 0px">
+                        <div>
+                          <span style="color: orange">$ 2340.90</span>
+                          <br />
+                          <span class="sale"><s>$ 2601</s></span>
+                          <br />
+                          <span>-10%</span>
+                          <br />
+                          <a href="">
+                            <i class="fa-regular fa-trash-can" style="
+                              font-size: 18px;
+                              cursor: pointer;
+                              color: #797575;
+                            "></i>
+                          </a>
+                        </div>
+                        <div>
+                          <span>Qty :</span>
+                          <span><b>1</b></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- san pham -->
+            <div class="payment_product">
+              <div class="payment_product_title">
+                <span class="mb-0"><b>Package 2 of 3</b></span>
+                <div>
+                  <span style="color: #797575">Shipped by</span>
+                  <span><b>Samsung</b></span>
+                </div>
+              </div>
+              <span style="font-size: 12px; padding: 10px 10px">Choose your delivery option</span>
+              <div class="payment_product--info d-flex">
+                <div class="payment_product--info--delivery">
+                  <div class="d-flex">
+                    <i style="color: orange; margin-top: 3px; font-size: 17px" class="fa-solid fa-circle-check"></i>
+                    <div style="margin-left: 10px">
+                      <span style="font-size: 15px">$ 100</span>
+                      <br />
+                      <span style="font-size: 13px">Standard Delivery</span>
+                      <br />
+                      <span style="font-size: 14px">Get by 18-21 Nov</span>
+                    </div>
+                  </div>
+                </div>
+                <div style="padding: 0 5px"></div>
+              </div>
+
+              <div class="payment_product__item">
+                <div class="container" style="padding: 0 0;">
+                  <div class="row">
+                    <div class="col-lg-8 col-md-7 col-sm-7">
+                      <div class="payment_product__item_left d-flex">
+                        <picture>
+                          <img src="./images/i-2.png" style="height: 100px; width: 100px" />
+                        </picture>
+                        <div class="payment_product__item_left-infoItem">
+                          <span>Diamond Ring - Special</span>
+                          <br />
+                          <span style="color: #797575; font-size: 13px">Saga, Size: 7, 8, 9, 10</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-5 col-sm-5">
+                      <div class="payment_product__item_right" style="font-size: 15px; padding: 10px 0px">
+                        <div>
+                          <span style="color: orange">$ 4540.00</span>
+                          <br />
+                          <span class="sale"><s>$ 5500</s></span>
+                          <br />
+                          <span>-17.5%</span>
+                          <br />
+                          <a href="">
+                            <i class="fa-regular fa-trash-can" style="
+                              font-size: 18px;
+                              cursor: pointer;
+                              color: #797575;
+                            "></i>
+                          </a>
+                        </div>
+                        <div>
+                          <span>Qty :</span>
+                          <span><b>1</b></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- san pham -->
+            <div class="payment_product">
+              <div class="payment_product_title">
+                <span class="mb-0"><b>Package 3 of 3</b></span>
+                <div>
+                  <span style="color: #797575">Shipped by</span>
+                  <span><b>Samsung</b></span>
+                </div>
+              </div>
+              <span style="font-size: 12px; padding: 10px 10px">Choose your delivery option</span>
+              <div class="payment_product--info d-flex">
+                <div class="payment_product--info--delivery">
+                  <div class="d-flex">
+                    <i style="color: orange; margin-top: 3px; font-size: 17px" class="fa-solid fa-circle-check"></i>
+                    <div style="margin-left: 10px">
+                      <span style="font-size: 15px">$ 50</span>
+                      <br />
+                      <span style="font-size: 13px">Standard Delivery</span>
+                      <br />
+                      <span style="font-size: 14px">Get by 18-21 Nov</span>
+                    </div>
+                  </div>
+                </div>
+                <div style="padding: 0 5px"></div>
+              </div>
+
+              <div class="payment_product__item">
+                <div class="container" style="padding: 0 0;">
+                  <div class="row">
+                    <div class="col-lg-8 col-md-7 col-sm-7">
+                      <div class="payment_product__item_left d-flex">
+                        <picture>
+                          <img src="./images/i-9.png" style="height: 100px; width: 100px" />
+                        </picture>
+                        <div class="payment_product__item_left-infoItem">
+                          <span>Gold Diamond Ring - True Love</span>
+                          <br />
+                          <span style="color: #797575; font-size: 13px">Pandora, Size: 7, 8, 9</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-5 col-sm-5">
+                      <div class="payment_product__item_right" style="font-size: 15px; padding: 10px 0px">
+                        <div>
+                          <span style="color: orange">$ 2300</span>
+                          <br>
+                          <span class="sale"><s>$ 2300</s></span>
+                          <br>
+                          <span>-0%</span>
+                          <br />
+                          <a href="">
+                            <i class="fa-regular fa-trash-can" style="
+                              font-size: 18px;
+                              cursor: pointer;
+                              color: #797575;
+                            "></i>
+                          </a>
+                        </div>
+                        <div>
+                          <span>Qty :</span>
+                          <span><b>1</b></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+          <!-- phan tinh tien -->
+          <div class="col-lg-4 payment_process">
+            <div class="payment_process_payment_method">
+              <div class="payment_process_payment_method--title">
+                <spa style="font-size: 15px"><b>Select Payment Method</b></spa>
+                <span onclick="$('.edit_method').css('display', 'block')">View all methods</span>
+              </div>
+
+              <div class="payment_process_payment--list">
+                <div class="payment_process_payment--item">
+                  <div class="payment_process_payment--item--title mb-3">
+                    <div>
+                      <img src="./images/cashOnDelivery.webp" alt="" style="height: 28px; width: 28px" />
+                      <span style="font-size: 15px">Cash On Delivery</span>
+                    </div>
+                    <i style="color: orange; font-size: 17px" class="fa-solid fa-circle-check"></i>
+                  </div>
+
+                  <span style="color: #797575; font-size: 10px">Pay when you receive</span>
+                </div>
+                <div class="mt-2"></div>
+
+                <div class="payment_process_payment--item--btm" onclick="$('.add_card').css('display', 'block')">
+                  <div class="payment_process_payment--item--title" style="padding: 10px 10px">
+                    <div>
+                      <img src="./images/cashOnDelivery.webp" alt="" style="height: 28px; width: 28px" />
+                      <span style="font-size: 15px;">Credit/Debit Card</span>
+                    </div>
+                    <i class="fa-regular fa-circle" style="color: #797575; font-size: 17px"></i>
+                  </div>
+                  <div class="payment_process_payment--item--add_card">
+                    <span style="color: #797575; font-size: 10px">Tap to add card</span>
+                    <div>
+                      <img src="./images/card1.webp" alt="" />
+                      <img src="./images/card2.webp" alt="" />
+                      <img src="./images/card3.jpg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="payment_process_payment--voucher" style="margin-top: 1.6rem">
+                <span><b>Voucher</b></span>
+                <div class="payment_process_payment--voucher_type">
+                  <input type="text" placeholder="Enter Voucher Code" />
+                  <a href="">apply</a>
+                </div>
+              </div>
+
+              <div class="payment_process_payment--contact payment_process_payment_method--title"
+                style="margin-top: 1rem">
+                <span style="color: black;"><b>Invoice and Contact Info</b></span>
+                <span href="" onclick="$('.contact_card').css('display', 'block')">Edit</span>
+              </div>
+
+              <div class="payment-process_payment--totalFee">
+                <div class="payment-process_payment--totalFee--order">
+                  <span class="payment_process_payment_method--title" style="margin-top: 1rem"><b>Order
+                      Summary</b></span>
+                  <div class="payment_process_payment_method--title payment-process_payment--totalFee--order-item">
+                    <span>Subtotal(3 items)</span>
+                    <p><u>$</u> 9180.9</p>
+                  </div>
+                  <div class="payment_process_payment_method--title payment-process_payment--totalFee--order-item">
+                    <span>Shipping Fee</span>
+                    <p><u>$</u> 150</p>
+                  </div>
+                  <div class="payment_process_payment_method--title payment-process_payment--totalFee--order-item">
+                    <span>Shipping discount and voucher</span>
+                    <p>-<u>$</u> 0</p>
+                  </div>
+                  <div class="total payment_process_payment_method--title">
+                    <span style="color: black;">Total: </span>
+                    <p style="color: orange"><u>$</u> 9330.9</p>
+                  </div>
+                  <div class="payment">
+                    <a href="">proceed to payment</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- overlay add card -->
+          <div class="add_card">
+            <div class="add_card_overlay">
+              <div class="edit_method_title d-flex justify-content-between" style="padding: 20px 20px;">
+                <span style="font-size: 20px;">Credit/Debit Card</span>
+                <i class="fa-solid fa-xmark" style="font-size: 25px; color: #999; cursor: pointer;"
+                  onclick="$('.add_card').fadeOut()"></i>
+              </div>
+
+              <div style="display: flex; justify-content: center; margin-top: 30px;;">
+                <span style="font-size: 18px;">Add a new card</span>
+              </div>
+
+              <div
+                style="background-color: #f2fcf9; display: flex; align-items: center; justify-content: center; padding: 15px 12px; margin-top: 12px;">
+                <img src="./images/certifi.webp" alt="" style="width: 26px; height:26px;">
+                <span style="color: #009962; margin-left: 12px;">Covered by Lodge Payment Protection</span>
+              </div>
+
+              <div style="padding: 20px 20px;">
+                <div>
+                  <form action="">
+                    <div
+                      style="background-color: #fbfbfb; box-shadow: 0px 0px 4px 0px #999; border-radius: 10px; padding: 13px 13px;">
+                      <div style="display: flex; justify-content: right; margin-right: 25px;">
+                        <img src="./images/card1.webp" alt="" style="width: 50px; height: 50px;">
+                        <img src="./images/card2.webp" alt="" style="width: 50px; height: 50px;">
+                        <img src="./images/card3.jpg" alt="" style="width: 50px; height: 50px;">
+                      </div>
+                      <div style="padding: 12px 12px; font-size: 14px;">
+                        <label for="cardnumber">Card number</label>
+                        <input type="text" required id="cardnumber">
+                      </div>
+                      <div style="padding: 12px 12px; font-size: 14px;">
+                        <label for="noc">Name on card</label>
+                        <input type="text" id="noc" required>
+                      </div>
+                      <div class="d-flex" style="padding: 12px 12px; font-size: 14px;">
+                        <div style="margin-right: 30px;">
+                          <label for="Expiration">Expiration (MM/YY)</label>
+                          <input type="text" id="Expiration" required>
+                        </div>
+                        <div>
+                          <label for="CVV">CVV</label>
+                          <i style="
+                              cursor: pointer;
+                              color: orange;
+                              font-size: 16px;
+                              margin-left: 0.5rem;
+                            " onclick="$('.cvv').css('display','flex');" class="fa-solid fa-circle-info"></i>
+                          <input type="text" id="CVV" required>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div style="margin-top:20px; font-size: 14px; padding: 0 40px;">
+                      <span>I acknowledge that my card information is saved in my Lodge account for subsequent
+                        transactions.</span>
+                      <div class="d-flex align-items-center mt-3">
+                        <input type="checkbox" name="Remember" id="Remember" style="width: 15px; height:15px;">
+                        <label for="Remember" style="margin-left:5px;">Remember card</label>
+                      </div>
+                    </div>
+
+                    <div class="d-flex align-items-center justify-content-center" style="margin-top: 5rem;">
+                      <button class="choose-hover-opacity"
+                        style="padding: 8px 120px; border: none; background-color: orange; color: #fff; border-radius: 3px;">Save
+                        Card</button>
+                    </div>
+
+                  </form>
+                </div>
+
+                <div class="cvv">
+                  <div class="cvv_overlay">
+                    <div class="d-flex justify-content-between mb-3">
+                      <h5>What's CVV</h5>
+                      <i class="fa-solid fa-xmark" style="font-size: 25px; color: #999; cursor: pointer;"
+                        onclick="$('.cvv').fadeOut()"></i>
+                    </div>
+                    <span style="color: #999; font-size: 15px;">The CVV is the 3 digit number on the back of your
+                      card</span>
+                    <div class="d-flex justify-content-center py-4">
+                      <img style="width: 200px;" src="./images/CVV.webp" alt="">
+                    </div>
+                    <div class="d-flex justify-content-center">
+                      <button class="choose-hover-opacity" onclick="$('.cvv').fadeOut()">got it</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- overlay credit card -->
+        <div class="add_card_method credit_card_method">
+          <div class="add_card_method_overlay">
+            <div class="edit_method_title d-flex justify-content-between align-items-center"
+              style="padding: 20px 20px;">
+              <div class="edit_method_title d-flex align-items-center">
+                <i class="fa-solid fa-arrow-left" style="font-size: 30px; cursor: pointer;"
+                  onclick="$('.add_card_method').fadeOut()"></i>
+                <span style="font-size: 20px; margin-left: 12px;">Credit/Debit Card</span>
+              </div>
+              <i class="fa-solid fa-xmark" style="font-size: 30px; color: #999; cursor: pointer;"
+                onclick="$('.edit_method').fadeOut() && $('.add_card_method').fadeOut()"></i>
+            </div>
+            <div
+              style="display: flex; justify-content: space-between; margin-top: 30px; padding: 0 25px; margin-bottom: 30px; align-items: center;">
+              <span style="font-size: 16px;">Add a new card</span>
+              <img src="./images/security.webp" style="width: 150px; height: 40px;">
+            </div>
+
+            <div style="padding: 20px 20px;">
+              <div>
+                <form action="">
+                  <div
+                    style="background-color: #fbfbfb; box-shadow: 0px 0px 4px 0px #999; border-radius: 10px; padding: 13px 13px;">
+                    <div style="display: flex; justify-content: right; margin-right: 25px;">
+                      <img src="./images/card1.webp" alt="" style="width: 50px; height: 50px;">
+                      <img src="./images/card2.webp" alt="" style="width: 50px; height: 50px;">
+                      <img src="./images/card3.jpg" alt="" style="width: 50px; height: 50px;">
+                    </div>
+                    <div style="padding: 12px 12px; font-size: 14px;">
+                      <label for="cardnumber">Card number</label>
+                      <input type="text" required id="cardnumber">
+                    </div>
+                    <div style="padding: 12px 12px; font-size: 14px;">
+                      <label for="noc">Name on card</label>
+                      <input type="text" id="noc" required>
+                    </div>
+                    <div class="d-flex" style="padding: 12px 12px; font-size: 14px;">
+                      <div style="margin-right: 30px;">
+                        <label for="Expiration">Expiration (MM/YY)</label>
+                        <input type="text" id="Expiration" required>
+                      </div>
+                      <div>
+                        <label for="CVV">CVV</label>
+                        <i style="
+                            cursor: pointer;
+                            color: orange;
+                            font-size: 16px;
+                            margin-left: 0.5rem;
+                          " onclick="$('.cvv').css('display','flex');" class="fa-solid fa-circle-info"></i>
+                        <input type="text" id="CVV" required>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div style="margin-top:20px; font-size: 14px; padding: 0 40px;">
+                    <span>I acknowledge that my card information is saved in my Lodge account for subsequent
+                      transactions.</span>
+                    <div class="d-flex align-items-center mt-3">
+                      <input type="checkbox" name="Remember" id="Remember" style="width: 15px; height:15px;">
+                      <label for="Remember" style="margin-left:5px;">Remember card</label>
+                    </div>
+                  </div>
+
+                  <div class="d-flex align-items-center justify-content-center" style="margin-top: 50px;">
+                    <img src="./images/overlay_method_footer.webp" style="width: 80%; height: 4%;">
+                  </div>
+
+                  <div class="d-flex align-items-center justify-content-center" style="margin-top: 1rem;">
+                    <button class="choose-hover-opacity">Confirm Selection</button>
+                  </div>
+                </form>
+              </div>
+              <div class="cvv">
+                <div class="cvv_overlay">
+                  <div class="d-flex justify-content-between mb-3">
+                    <h5>What's CVV</h5>
+                    <i class="fa-solid fa-xmark" style="font-size: 25px; color: #999; cursor: pointer;"
+                      onclick="$('.cvv').fadeOut()"></i>
+                  </div>
+                  <span style="color: #999; font-size: 15px;">The CVV is the 3 digit number on the back of your
+                    card</span>
+                  <div class="d-flex justify-content-center py-4">
+                    <img style="width: 200px;" src="./images/CVV.webp" alt="">
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <button class="choose-hover-opacity" onclick="$('.cvv').fadeOut()">got it</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+        <!-- overlay zalo -->
+        <div class="add_card_method zalo_info_method">
+          <div class="add_card_method_overlay">
+            <div class="edit_method_title d-flex justify-content-between align-items-center"
+              style="padding: 20px 20px;">
+              <div class="edit_method_title d-flex align-items-center">
+                <i class="fa-solid fa-arrow-left" style="font-size: 30px; cursor: pointer;"
+                  onclick="$('.add_card_method').fadeOut()"></i>
+                <span style="font-size: 20px; margin-left: 12px;">ZaloPay Wallet</span>
+              </div>
+              <i class="fa-solid fa-xmark" style="font-size: 30px; color: #999; cursor: pointer;"
+                onclick="$('.edit_method').fadeOut() && $('.add_card_method').fadeOut()"></i>
+            </div>
+
+            <div style="margin-top: 30px; padding: 20px 55px; background-color: #f9feff; display: flex;">
+              <img src="./images/logoZalo.webp"
+                style="border-radius: 50px; background-color:#fff; height: 53px; width: 53px; padding: 11px 11px; box-shadow: 0 4px 6px 0 rgb(0 0 0 / 10%);">
+              <span style="margin-left: 20px;">Link your Lodge E-Wallet to Lazada for faster payment!</span>
+            </div>
+
+            <div style="padding: 0 55px; margin-top: 45px;">
+              <span style="font-size: 15px;">
+                Ensure you have these ready: <br>
+                1. Password for ZaloPay login. <br>
+                2. Your mobile number registered for ZaloPay is active.
+              </span>
+            </div>
+
+            <div class="d-flex align-items-center justify-content-center" style="margin-top: 1rem;">
+              <button class="choose-hover-opacity">Confirm Selection</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- overlay momo -->
+        <div class="add_card_method momo_info_method">
+          <div class="add_card_method_overlay">
+            <div class="edit_method_title d-flex justify-content-between align-items-center"
+              style="padding: 20px 20px;">
+              <div class="edit_method_title d-flex align-items-center">
+                <i class="fa-solid fa-arrow-left" style="font-size: 30px; cursor: pointer;"
+                  onclick="$('.add_card_method').fadeOut()"></i>
+                <span style="font-size: 20px; margin-left: 12px;">MoMo E-Wallet</span>
+              </div>
+              <i class="fa-solid fa-xmark" style="font-size: 30px; color: #999; cursor: pointer;"
+                onclick="$('.edit_method').fadeOut() && $('.add_card_method').fadeOut()"></i>
+            </div>
+
+            <div style="margin-top: 30px; padding: 20px 55px; background-color: #f9feff; display: flex;">
+              <img src="./images/logoMomo.webp"
+                style="border-radius: 50px; background-color:#fff; height: 53px; width: 53px; padding: 11px 11px; box-shadow: 0 4px 6px 0 rgb(0 0 0 / 10%);">
+              <span style="margin-left: 20px;">Link your MoMo E-Wallet to Lodge for faster payment!</span>
+            </div>
+
+            <div style="padding: 0 55px; margin-top: 45px;">
+              <span style="font-size: 15px;">
+                Ensure you have these ready: <br>
+                1. Password for Momo login. <br>
+                2. Your mobile number registered for MoMo is active. <br>
+                3. Installed Momo mobile app.
+              </span>
+            </div>
+
+            <div class="d-flex align-items-center justify-content-center" style="margin-top: 1rem;">
+              <button class="choose-hover-opacity">Confirm Selection</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- overlay atm -->
+        <div class="add_card_method atm_info_method">
+          <div class="add_card_method_overlay">
+            <div class="edit_method_title d-flex justify-content-between align-items-center"
+              style="padding: 20px 20px;">
+              <div class="edit_method_title d-flex align-items-center">
+                <i class="fa-solid fa-arrow-left" style="font-size: 30px; cursor: pointer;"
+                  onclick="$('.add_card_method').fadeOut()"></i>
+                <span style="font-size: 20px; margin-left: 12px;">ATM card / Internet Banking </span>
+              </div>
+              <i class="fa-solid fa-xmark" style="font-size: 30px; color: #999; cursor: pointer;"
+                onclick="$('.edit_method').fadeOut() && $('.add_card_method').fadeOut()"></i>
+            </div>
+
+            <div style="padding: 0 55px; margin-top: 45px;">
+              <span style="font-size: 15px;">
+                Awesome! Please have these ready: <br>
+                1. ATM card <br>
+                2. Registered for ONLINE PAYMENT SERVICE and/or INTERNET BANKING <br>
+                3. Account balance LARGER THAN value of your order
+                <br>
+                <br>
+                Dong A Bank is currently unavailable for payment via ATM Card/Internet Banking due to bank maintenanc
+              </span>
+            </div>
+
+            <div class="d-flex align-items-center justify-content-center" style="margin-top: 1rem;">
+              <button class="choose-hover-opacity">Confirm Selection</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- overlay cash -->
+        <div class="add_card_method cash_info_method">
+          <div class="add_card_method_overlay">
+            <div class="edit_method_title d-flex justify-content-between align-items-center"
+              style="padding: 20px 20px;">
+              <div class="edit_method_title d-flex align-items-center">
+                <i class="fa-solid fa-arrow-left" style="font-size: 30px; cursor: pointer;"
+                  onclick="$('.add_card_method').fadeOut()"></i>
+                <span style="font-size: 20px; margin-left: 12px;">MoMo E-Wallet</span>
+              </div>
+              <i class="fa-solid fa-xmark" style="font-size: 30px; color: #999; cursor: pointer;"
+                onclick="$('.edit_method').fadeOut() && $('.add_card_method').fadeOut()"></i>
+            </div>
+
+            <div style="margin-top: 30px; padding: 20px 55px; background-color: #f9feff; display: flex;">
+              <img src="./images/cashOnDelivery.webp"
+                style="border-radius: 50px; background-color:#fff; height: 53px; width: 53px; padding: 11px 11px; box-shadow: 0 4px 6px 0 rgb(0 0 0 / 10%);">
+              <div style="margin-left: 20px;">
+                <span>- Only agree to receive the package if "OUT OF DELIVERY" status has been updated for your order.
+                </span>
+                <div style="margin-top:20px;">
+                  <span>- Double check your Order number, Sender information and Tracking number BEFORE PAYMENT.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center justify-content-center" style="margin-top: 1rem;">
+              <button class="choose-hover-opacity">Confirm Selection</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- overlay method -->
+        <div class="edit_method">
+          <div class="edit_method_overlay">
+            <div class="edit_method_title d-flex justify-content-between">
+              <span style="font-size: 20px;">Select Payment Method</span>
+              <i class="fa-solid fa-xmark" style="font-size: 25px; color: #999; cursor: pointer;"
+                onclick="$('.edit_method').fadeOut()"></i>
+            </div>
+
+            <div style="margin-top: 50px;">
+              <span style="font-size: 13px;">Recommended method(s)</span>
+              <div class="d-flex align-items-center justify-content-between"
+                style="border: 1px solid #dadada; padding: 16px 16px; border-radius: 8px; margin-top: 17px; cursor: pointer;"
+                onclick="$('.credit_card_method').css('display', 'block')">
+                <div class="d-flex align-items-center">
+                  <div>
+                    <img src="./images/cashOnDelivery.webp" alt="" style="height: 30px; width: 30px" />
+                  </div>
+
+                  <div style="font-size: 14px; margin-left: 10px;">
+                    <span style="margin-bottom: 6px;"><b>Credit/Debit Card</b></span>
+                    <br>
+                    <span style="color: #999;">Credit/Debit Card</span>
+                  </div>
+                </div>
+
+                <div class="logo_method d-flex align-items-center">
+                  <img src="./images/card1.webp" alt="" />
+                  <img src="./images/card2.webp" alt="" />
+                  <img src="./images/card3.jpg" alt="" />
+                  <i style="color: #dadada; font-size: 20px; margin-left: 15px;" class="fa-solid fa-angle-right"></i>
+                </div>
+
+              </div>
+            </div>
+
+            <div style="margin-top: 50px;">
+              <span style="font-size: 13px;">Payment methods</span>
+              <div class="d-flex align-items-center justify-content-between container-login"
+                onclick="$('.zalo_info_method').css('display','block')">
+                <div class="d-flex align-items-center">
+                  <div>
+                    <img src="./images/card6.webp" alt="" style="height: 30px; width: 30px" />
+                  </div>
+
+                  <div style="font-size: 14px; margin-left: 10px;">
+                    <span><b>ZaloPay Wallet</b></span>
+                    <br>
+                    <span style="color: #999;">ZaloPay account is required</span>
+                  </div>
+                </div>
+
+                <i style="color: #dadada; font-size: 20px; margin-left: 15px;" class="fa-solid fa-angle-right"></i>
+              </div>
+            </div>
+
+            <div style="margin-top: 20px;">
+
+              <div class="d-flex align-items-center justify-content-between container-login"
+                onclick="$('.momo_info_method').css('display','block')">
+                <div class="d-flex align-items-center">
+                  <div>
+                    <img src="./images/card5.webp" alt="" style="height: 30px; width: 30px" />
+                  </div>
+
+                  <div style="font-size: 14px; margin-left: 10px;">
+                    <span><b>MoMo E-Wallet</b></span>
+                    <br>
+                    <span style="color: #999;">Momo acount is required</span>
+                  </div>
+                </div>
+
+                <i style="color: #dadada; font-size: 20px; margin-left: 15px;" class="fa-solid fa-angle-right"></i>
+
+              </div>
+            </div>
+
+            <div style="margin-top: 20px;">
+              <div class="d-flex align-items-center justify-content-between container-login"
+                onclick="$('.atm_info_method').css('display','block')">
+                <div class="d-flex align-items-center">
+                  <div>
+                    <img src="./images/card4.webp" alt="" style="height: 30px; width: 30px" />
+                  </div>
+
+                  <div style="font-size: 14px; margin-left: 10px;">
+                    <span><b>ATM card / Internet Banking</b></span>
+                    <br>
+                    <span style="color: #999;">Payment processed at Napas</span>
+                  </div>
+                </div>
+                <i style="color: #dadada; font-size: 20px; margin-left: 15px;" class="fa-solid fa-angle-right"></i>
+
+              </div>
+            </div>
+
+            <div style="margin-top: 20px;">
+              <div class="d-flex align-items-center justify-content-between container-login"
+                onclick="$('.cash_info_method').css('display','block')">
+                <div class="d-flex align-items-center">
+                  <div>
+                    <img src="./images/cashOnDelivery.webp" alt="" style="height: 30px; width: 30px" />
+                  </div>
+
+                  <div style="font-size: 14px; margin-left: 10px;">
+                    <span><b>Cash On Delivery</b></span>
+                    <br>
+                    <span style="color: #999;">Cash On Delivery</span>
+                  </div>
+                </div>
+                <i style="color: #dadada; font-size: 20px; margin-left: 15px;" class="fa-solid fa-angle-right"></i>
+
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center justify-content-center" style="margin-top: 110px;">
+              <img src="./images/overlay_method_footer.webp" alt="" style="width: 80%; height: 4%;">
+            </div>
+          </div>
+
+        </div>
+
+        <!-- overlay edit invoice and contact info -->
+        <div class="contact_card">
+          <div class="contact_card_overlay">
+            <div class="d-flex justify-content-between">
+              <span style="font-size: 20px; color: black;">Invoice and Contact Info</span>
+              <i class="fa-solid fa-xmark" style="font-size: 25px; color: #999; cursor: pointer;"
+                onclick="$('.contact_card').fadeOut()"></i>
+            </div>
+            <form action="" style="margin-top: 40px;">
+              <div>
+                <label for="email">Email</label>
+                <input type="email" required name="email" id="email">
+                <span>Enter your email to get delivery status updates</span>
+              </div>
+
+              <div style="margin-top: 25px;">
+                <div style="display: flex; justify-content: space-between;">
+                  <div>
+                    <label for="" style="color: red;">*</label>
+                    <label for="BA">Billing Address</label>
+                  </div>
+                  <a style="text-decoration: none; color: orange; cursor: pointer; font-size: 15px;"
+                    onclick="$('.edit_contact').css('display', 'block')">Edit</a>
+                </div>
+                <input type="text" required name="BA" id="BA">
+                <span>Please edit your billing address</span>
+              </div>
+
+              <div style="margin-top: 25px;">
+                <label for="taxcode">Tax Code</label>
+                <input type="text" name="taxcode" id="taxcode">
+                <span>Please input your company/personal income tax id to get invoice</span>
+              </div>
+
+              <div style="display: flex; justify-content: center; align-items: center; margin-top: 50px;">
+                <button style="background-color: #eff0f5; color: #757575; padding: 7px 50px;"
+                  onclick="$('.contact_card').fadeOut()">Cancel</button>
+                <button class="choose-hover-opacity" style="padding: 7px 61px;">save</button>
+              </div>
+            </form>
+
+          </div>
+        </div>
+
+        <!-- overlay edit contact -->
+        <div class="edit_address edit_contact">
+          <div class="edit_address_overlay">
+            <div class="edit_address_content">
+              <div class="edit_address_content_title d-flex align-items-center justify-content-between">
+                <span style="font-size: 20px">Billing Address</span>
+                <a onclick="$('.new_address').css('display', 'flex') && $('.edit_contact').fadeOut()"
+                  style="color: orange;">Add new address</a>
+              </div>
+
+              <div class="edit_address_content_body d-flex">
+                <div>
+                  <i style="
+                        color: orange;
+                        margin-top: 3px;
+                        font-size: 17px;
+                      " class="fa-solid fa-circle-check"></i>
+                </div>
+                <div style="margin-left: 12px">
+                  <span style="font-size: 17px">Name: Aliqua</span>
+                  <span style="font-size: 17px">ID: 123456789</span>
+                  <br />
+                  <span style="font-size: 14px">601 W 43rd St, New York, NY 10036, USA</span>
+                  <br />
+                  <span style="font-size: 12px; color: orange">Postcode: 10001</span>
+                  <div class="edit_address_content_body--note mt-2">
+                    <span>Default Shipping Address</span>
+                    <span>Default Billing Address</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="edit_address_content_footer">
+                <button class="edit_address_content_footer--cancel" onclick="$('.edit_address').fadeOut()">
+                  cancel
+                </button>
+                <a href="" class="choose-hover-opacity edit_address_content_footer--save">
+                  save
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- overlay of choose collection mobile  -->
+        <div class="edit_collection_point_sm">
+          <div class="edit_collection_point_sm-overlay">
+            <div class="d-flex justify-content-between">
+              <span>Pick up from</span>
+              <i class="fa-solid fa-xmark" style="font-size: 25px; color: #999; cursor: pointer;"
+                onclick="$('.edit_collection_point_sm').fadeOut()"></i>
+            </div>
+
+            <div class="add-info">
+              <div class="add-info-mb">
+                <span class="title" style="font-size: 14px;">Postco - Consulate of Vietnam</span>
+                <span>Postcode: 10001</span>
+              </div>
+
+              <div class="phone_number">
+                <span class="title">+1 200 32154</span>
+              </div>
+              <div class="address" style="display: flex; justify-content: space-between;">
+                <span class="title">Address</span>
+                <span>866 United Nations Plaza # 435, New York, NY 10017, USA</span>
+              </div>
+              <div>
+                <a blank href="https://goo.gl/maps/phLCUcDryV7M4vCo6" target="_blank"
+                  style="color: orange; font-size: 14px; cursor: pointer; text-decoration: none; margin-left: 8px;"">
+                    <i class=" fa-solid fa-location-dot"></i>
+                  <span>Map</span>
+                </a>
+              </div>
+              <div>
+                <span style="color: #999;">New York, NY 10017, USA</span>
+              </div>
+
+              <div class="word_time">
+                <span class="title">Time</span>
+                <span>10:00:00 - 17:00:00</span>
+              </div>
+            </div>
+
+            <div class="add-info">
+              <div class="add-info-mb">
+                <span class="title" style="font-size: 14px;">Postco – Post Company</span>
+                <span>Postcode: 10002</span>
+              </div>
+
+              <div class="phone_number">
+                <span class="title">+1 456 78912</span>
+              </div>
+
+              <div class="address" style="display: flex; justify-content: space-between;">
+                <span class="title">Address</span>
+                <span>233 Butler St #2a, Brooklyn, NY 11217, USA</span>
+              </div>
+
+              <div>
+                <a href="https://g.page/post-company?share" target="_blank"
+                  style="color: orange; font-size: 14px; cursor: pointer; text-decoration: none; margin-left: 8px;"">
+                    <i class=" fa-solid fa-location-dot"></i>
+                  <span>Map</span>
+                </a>
+              </div>
+
+              <div>
+                <span style="color: #999;">Brooklyn, NY 11217, USA</span>
+              </div>
+
+              <div class="word_time">
+                <span class="title">Time</span>
+                <span>06:00:00 - 17:00:00</span>
+              </div>
+            </div>
+
+            <div class="add-info">
+              <div class="add-info-mb">
+                <span class="title" style="font-size: 14px;">Postco - Post Office</span>
+                <span>Postcode: 10003</span>
+              </div>
+
+              <div class="phone_number">
+                <span class="title">+1 123 87459</span>
+              </div>
+
+              <div class="address" style="display: flex; justify-content: space-between;">
+                <span class="title">Address</span>
+                <span>20th Ave, Flushing, NY 11356, USA</span>
+              </div>
+
+              <div>
+                <a href="https://goo.gl/maps/b1E56aN2tYnApmtn6" target="_blank"
+                  style="color: orange; font-size: 14px; cursor: pointer; text-decoration: none; margin-left: 8px;">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span>Map</span>
+                </a>
+              </div>
+
+              <div>
+                <span style="color: #999;">Flushing, NY 11356, USA</span>
+              </div>
+
+              <div class="word_time">
+                <span class="title">Time</span>
+                <span>07:00:00 - 18:00:00</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- overlay of edit address -->
+        <div class="edit_address " id="edit_address">
+          <div class="edit_address_overlay">
+            <div class="edit_address_content">
+              <div class="edit_address_content_title d-flex align-items-center justify-content-between">
+                <span class="title">Shipping Address</span>
+                <a onclick="$('.new_address').css('display', 'flex') && $('.edit_address').fadeOut()"
+                  style="color:orange;">Add new address</a>
+              </div>
+
+              <div class="edit_address_content_body d-flex">
+                <div>
+                  <i style="
+                        color: orange;
+                        margin-top: 3px;
+                        font-size: 17px;
+                      " class="fa-solid fa-circle-check"></i>
+                </div>
+                <div style="margin-left: 12px">
+                  <span class="span_css">Name: Aliqua</span>
+                  <span class="span_css">ID: 123456789</span>
+                  <br />
+                  <span style="font-size: 14px">601 W 43rd St, New York, NY 10036, USA</span>
+                  <br />
+                  <span style="font-size: 12px; color: orange">Postcode: 10001</span>
+                  <div class="edit_address_content_body--note mt-2">
+                    <span>Default Shipping Address</span>
+                    <span>Default Billing Address</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="edit_address_content_footer">
+                <button class="edit_address_content_footer--cancel" onclick="$('.edit_address').fadeOut()">
+                  cancel
+                </button>
+                <a href="" class="choose-hover-opacity edit_address_content_footer--save">
+                  save
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- overlay of choose collection lg -->
+        <div class="edit_collection_point edit_collection_point-lg" id="edit_collection_point">
+          <div class="edit_collection_point_overlay">
+            <div class="edit_collection_point_content">
+              <div>
+                <div style="padding: 5px 0px; margin-bottom: 25px; display: flex;justify-content: space-between;">
+                  <span style="font-size: 20px">Pick up from pc</span>
+                  <i class="fa-solid fa-xmark" style="font-size: 25px; color: #999; cursor: pointer;"
+                    onclick="$('.edit_collection_point').fadeOut()"></i>
+                </div>
+                <div>
+                  <div>
+                    <div>
+                      <div class="table-header">
+                        <table style="width: 100%;">
+                          <colgroup>
+                            <col style="width: 5%;">
+                            <col style="width: 20%;">
+                            <col style="width: 45%;">
+                            <col style="width: 15%;">
+                            <col style="width: 15%;">
+                          </colgroup>
+                          <tbody>
+                            <tr class="table_row">
+                              <th rowspan="1">
+                                <div class="next-table-cell-wrapper"></div>
+                              </th>
+                              <th rowspan="1">
+                                <div class="next-table-cell-wrapper">Full name</div>
+                              </th>
+                              <th rowspan="1">
+                                <div class="next-table-cell-wrapper">Address</div>
+                              </th>
+                              <th rowspan="1">
+                                <div class="next-table-cell-wrapper">Postcode</div>
+                              </th>
+                              <th rowspan="1">
+                                <div class="next-table-cell-wrapper">Phone Number</div>
+                              </th>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+
+                      <div class="table-body" style="padding-right: 17px;">
+                        <table>
+                          <colgroup>
+                            <col style="width: 5%;">
+                            <col style="width: 20%;">
+                            <col style="width: 45%;">
+                            <col style="width: 15%;">
+                            <col style="width: 15%;">
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <td class="table_cell">
+                                <div class="next-table-cell-wrapper"><input type="radio" name="address"></div>
+                              </td>
+                              <td class="table_cell">
+                                <div class="next-table-cell-wrapper">Postco - Consulate of Vietnam</div>
+                              </td>
+                              <td class="table_cell">
+                                <div class="next-table-cell-wrapper">866 United Nations Plaza # 435, New York, NY 10017,
+                                  USA<br>
+                                  10:00:00 - 17:00:00
+
+                                  <a blank href="https://goo.gl/maps/NevDySbhU8aBABLv6" target="_blank"
+                                    style="color: orange; font-size: 14px; cursor: pointer; text-decoration: none; margin-left: 8px;"">
+                                      <i class=" fa-solid fa-location-dot"></i>
+                                    <span>Map</span>
+                                  </a>
+                                </div>
+                              </td>
+                              <td class="table_cell">
+                                <div class="next-table-cell-wrapper">10001</div>
+                              </td>
+                              <td class="table_cell">
+                                <div class="next-table-cell-wrapper">+1 200 32154</div>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td class="table_cell">
+                                <div class="next-table-cell-wrapper"><input type="radio" name="address"></div>
+                              </td>
+                              <td class="table_cell">
+                                <div class="next-table-cell-wrapper">Postco – Post Company</div>
+                              </td>
+                              <td class="table_cell">
+                                <div class="next-table-cell-wrapper">233 Butler St #2a, Brooklyn, NY 11217, USA <br>
+                                  06:00:00 - 17:00:00
+
+                                  <a href="https://g.page/post-company?share" target="_blank"
+                                    style="color: orange; font-size: 14px; cursor: pointer; text-decoration: none; margin-left: 8px;"">
+                                      <i class=" fa-solid fa-location-dot"></i>
+                                    <span>Map</span>
+                                  </a>
+
+                                </div>
+                              </td>
+                              <td class="table_cell">
+                                <div class="next-table-cell-wrapper">10002</div>
+                              </td>
+                              <td class="table_cell">
+                                <div class="next-table-cell-wrapper">+1 456 78912</div>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td class="table_cell">
+                                <div class="next-table-cell-wrapper"><input type="radio" name="address"></div>
+                              </td>
+                              <td class="table_cell">
+                                <div class="next-table-cell-wrapper">Postco - Post Office</div>
+                              </td>
+                              <td class="table_cell">
+                                <div class="next-table-cell-wrapper">20th Ave, Flushing, NY 11356, USA <br>
+                                  07:00:00 - 18:00:00
+
+                                  <a href="https://goo.gl/maps/WDmeNfHypYZJcteZ9" target="_blank"
+                                    style="color: orange; font-size: 14px; cursor: pointer; text-decoration: none; margin-left: 8px;">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <span>Map</span>
+                                  </a>
+                                </div>
+                              </td>
+                              <td class="table_cell">
+                                <div class="next-table-cell-wrapper">10003</div>
+                              </td>
+                              <td class="table_cell">
+                                <div class="next-table-cell-wrapper">+1 123 87459</div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="edit_collection_content_footer">
+                    <button class="edit_collection_content_footer--cancel"
+                      onclick="$('.edit_collection_point').fadeOut()">
+                      cancel
+                    </button>
+                    <a href="" class="choose-hover-opacity edit_collection_content_footer--save">
+                      confirm
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- add new address -->
+        <div class="new_address">
+          <div class="new_address_overlay">
+            <div class="d-flex justify-content-between mb-4">
+              <span style="font-size: 20px;">Add new shipping Address</span>
+              <i class="fa-solid fa-xmark" style="font-size: 25px; color: #999; cursor: pointer;"
+                onclick="$('.new_address').fadeOut()"></i>
+            </div>
+
+            <form action="">
+              <div>
+                <div class="new_address_info">
+
+                  <div class="new_address_info_left">
+                    <div>
+                      <label for="fullname">Full name</label>
+                      <input required class="new_address_info_input" type="text" name="fullname" id="fullname"
+                        placeholder="First Last">
+                    </div>
+
+                    <div>
+                      <label for="phonenumber">Phone Number</label>
+                      <input required class="new_address_info_input" type="phone" name="phonenumber" id="phonenumber"
+                        placeholder="Please enter your phone number">
+                    </div>
+                  </div>
+
+                  <div class="new_address_info_right">
+
+
+                    <div>
+                      <label for="address">Address</label>
+                      <input required class="new_address_info_input" type="text" name="address" id="address"
+                        placeholder="Please enter your address">
+                    </div>
+
+                    <div>
+                      <label for="Province" class="label_mobile">Province</label>
+                      <select name="flatform">
+                        <option value="AL">Alabama</option>
+                        <option value="AK">Alaska</option>
+                        <option value="AZ">Arizona</option>
+                        <option value="AR">Arkansas</option>
+                        <option value="CA">California</option>
+                        <option value="CO">Colorado</option>
+                        <option value="CT">Connecticut</option>
+                        <option value="DE">Delaware</option>
+                        <option value="DC">District Of Columbia</option>
+                        <option value="FL">Florida</option>
+                        <option value="GA">Georgia</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="ID">Idaho</option>
+                        <option value="IL">Illinois</option>
+                        <option value="IN">Indiana</option>
+                        <option value="IA">Iowa</option>
+                        <option value="KS">Kansas</option>
+                        <option value="KY">Kentucky</option>
+                        <option value="LA">Louisiana</option>
+                        <option value="ME">Maine</option>
+                        <option value="MD">Maryland</option>
+                        <option value="MA">Massachusetts</option>
+                        <option value="MI">Michigan</option>
+                        <option value="MN">Minnesota</option>
+                        <option value="MS">Mississippi</option>
+                        <option value="MO">Missouri</option>
+                        <option value="MT">Montana</option>
+                        <option value="NE">Nebraska</option>
+                        <option value="NV">Nevada</option>
+                        <option value="NH">New Hampshire</option>
+                        <option value="NJ">New Jersey</option>
+                        <option value="NM">New Mexico</option>
+                        <option value="NY">New York</option>
+                        <option value="NC">North Carolina</option>
+                        <option value="ND">North Dakota</option>
+                        <option value="OH">Ohio</option>
+                        <option value="OK">Oklahoma</option>
+                        <option value="OR">Oregon</option>
+                        <option value="PA">Pennsylvania</option>
+                        <option value="RI">Rhode Island</option>
+                        <option value="SC">South Carolina</option>
+                        <option value="SD">South Dakota</option>
+                        <option value="TN">Tennessee</option>
+                        <option value="TX">Texas</option>
+                        <option value="UT">Utah</option>
+                        <option value="VT">Vermont</option>
+                        <option value="VA">Virginia</option>
+                        <option value="WA">Washington</option>
+                        <option value="WV">West Virginia</option>
+                        <option value="WI">Wisconsin</option>
+                        <option value="WY">Wyoming</option>
+                      </select>
+                    </div>
+
+                    <div>
+                      <label for="District" class="label_mobile">District</label>
+                      <select style="cursor: not-allowed; background-color: #fafafa;" disabled>
+                        <option value="">Please enter your district</option>
+                      </select>
+                    </div>
+
+                    <div style="margin-bottom: 14px;">
+                      <label for="Ward" class="label_mobile">Ward</label>
+                      <select style="cursor: not-allowed; background-color: #fafafa;" disabled>
+                        <option value="">Please enter your ward</option>
+                      </select>
+                    </div>
+
+
+                    <div>
+                      <span style="font-size: 14px;">Select a label for effective delivery:</span>
+                      <div class="new_address_info_right_place" style="margin-top: 20px; cursor: pointer;">
+
+                        <div class="new_address_info_right_place_office choose-hover">
+                          <img src="./images/office.png" alt="" class="office_color">
+                          <img src="./images/office_nocolor.png" alt="" class="office_nocolor">
+                          <p style="margin-bottom: 0px;">office</p>
+                        </div>
+
+                        <div class="new_address_info_right_place_home choose-hover">
+                          <img src="./images/home_color.png" alt="" class="home_color">
+                          <img src="./images/home.png" alt="" class="home_nocolor">
+                          <p style="margin-bottom: 0px;">home</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div style="padding: 35px 0; display: flex; justify-content: center;">
+                      <button class="edit_collection_content_footer--cancel" onclick="$('.new_address').fadeOut()">
+                        cancel
+                      </button>
+                      <button style="padding: 7px 61px;"
+                        class="choose-hover-opacity edit_collection_content_footer--save">
+                        save
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
