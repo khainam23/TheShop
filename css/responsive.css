@@ -97,6 +97,10 @@
   .box-item-list-item span {
     padding: 4px 50px;
   }
+  
+  .user {
+    width: 65%;
+  }
 }
 
 @media (max-width: 576px) {
