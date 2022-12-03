@@ -27,3 +27,8 @@ $(".read-more").click(function() {
     $(".more").show(1000);
     $(".read-more").hide();
 });
+
+$(window).bind("load", function () {
+    jQuery("#status").fadeOut();
+    jQuery("#loader").fadeOut();
+});
